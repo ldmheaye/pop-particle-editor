@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Particles\ParticleHolder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopNodeEditor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopApplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopHome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PopRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PopStyle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PopState.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopWorkBench.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\BasicTypes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\NodeTrack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopResourceView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopParticleGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\Resource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\Emitter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\ParticleField.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\ParticleSystemDefinition.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Particles\ParticleXml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frames\PopParticleViewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Frames\PopNodeEditor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frames\PopApplication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PopState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frames\PopHome.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frames\PopWorkBench.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PopRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PopStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PopEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\BasicTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\Emitter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\NodeColors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\ParticleField.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\ParticleSystemDefinition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\NodeTrack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleEmitter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleField.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleJson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleXml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleTrack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fonts\IconsFontAwesome7.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frames\PopResourceView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PopResource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Nodes\Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frames\PopParticleViewer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Particles\ParticleHolder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="global\zh.lang.json">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="global\en.lang.json">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PopParticleEditor.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ParticleIcon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="fonts\fa-solid-900.ttf" />
+    <Font Include="fonts\LXGWNeoXiHeiPlus.ttf" />
+  </ItemGroup>
+</Project>

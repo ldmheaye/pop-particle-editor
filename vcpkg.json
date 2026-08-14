@@ -1,0 +1,16 @@
+{
+  "name": "wx-toolkit",
+  "version": "0.0.1",
+  "dependencies": [
+    "glfw3",
+    {
+      "name": "imgui",
+      "features": [ "glfw-binding", "opengl3-binding", "docking-experimental" ]
+    },
+    "glad",
+    "nativefiledialog-extended",
+    "stb",
+    "nlohmann-json",
+    "pugixml"
+  ]
+}

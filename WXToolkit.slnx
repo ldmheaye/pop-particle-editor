@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="PopParticleEditor/PopParticleEditor.vcxproj" Id="02bfc8b1-5759-4729-8149-cc79b71175b2" />
+  <Project Path="ImGuiNodeEditor/ImGuiNodeEditor.vcxproj" Id="d37707bc-e34b-4a14-9f4e-34f5e1eaf1f8" />
+  <Project Path="WXBase/WXBase.vcxproj" Id="17aa55e0-f3d6-43de-ab4f-65182e2bda64" />
+</Solution>
