@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: '构建配置'
+        required: true
+        default: 'Release'
+        type: choice
+        options:
+          - Release
+          - Debug
+      platform:
+        description: '目标平台'
+        required: true
+        default: 'x64'
+        type: choice
+        options:
+          - x64
+          - x86
+
+env:
+  SOLUTION_FILE: WXToolkit.slnx
+  BUILD_OUTPUT_DIR: build_output
+
+jobs:
+  build:
+    name: Build ${{ inputs.configuration }}-${{ inputs.platform }}
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Restore NuGet packages (if needed)
+        run: nuget restore ${{ env.SOLUTION_FILE }}
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Build Solution
+        run: |
+          msbuild "${{ env.SOLUTION_FILE }}" `
+            /p:Configuration=${{ inputs.configuration }} `
+            /p:Platform=${{ inputs.platform }} `
+            /p:OutDir="${{ github.workspace }}/${{ env.BUILD_OUTPUT_DIR }}/" `
+            /m `
+            /verbosity:minimal
+        shell: pwsh
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: WXToolkit-${{ inputs.configuration }}-${{ inputs.platform }}
+          path: ${{ env.BUILD_OUTPUT_DIR }}
+          retention-days: 7
+          if-no-files-found: error
+          compression-level: 9
