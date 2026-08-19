@@ -35,7 +35,13 @@ jobs:
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
-
+        
+      - name: Install dependencies via vcpkg
+        run: |
+          vcpkg install imgui glad --triplet x64-windows
+          vcpkg integrate install
+        shell: pwsh
+        
       - name: Restore NuGet packages (if needed)
         run: nuget restore ${{ env.SOLUTION_FILE }}
         shell: pwsh
